@@ -50,7 +50,7 @@ async function getCategoryIds () {
  *   ]
  */
 async function getCategory (catId) {
-	const res = await axios.get(`http://jservice.io/api/category?id=${catId}`);
+	const res = await axios.get(`https://jservice.io/api/category?id=${catId}`);
 
 	// filters out empty answers and questions from API
 	const cluesData = res.data.clues.filter((val) => {
